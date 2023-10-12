@@ -485,10 +485,7 @@ protected void onDigitalTwinBound(Map<String, PhysicalAssetDescription> adapters
 
         //Iterate over all the received PAD from connected Physical Adapters
         adaptersPhysicalAssetDescriptionMap.values().forEach(pad -> {
-
-            //Iterate over all the received PAD from connected Physical Adapters
-            adaptersPhysicalAssetDescriptionMap.values().forEach(pad -> {
-                pad.getProperties().forEach(property -> {
+            pad.getProperties().forEach(property -> {
                 try {
                     
                     //Create and write the property on the DT's State
